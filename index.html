@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Psicóloga Maria Verônica - Atendimento clínico online e presencial." />
   <title>Psicóloga Maria Verônica</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --verde-claro: #A8D5BA;
@@ -20,10 +22,10 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       background-color: var(--cinza);
-      color: #333;
+      color: #222;
     }
 
     header {
@@ -34,7 +36,8 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      font-weight: 600;
     }
 
     section {
@@ -48,6 +51,7 @@
       padding: 2rem;
       border-radius: 10px;
       margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
     .foto {
@@ -60,6 +64,12 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .foto img:hover {
+      transform: scale(1.05);
     }
 
     .cta {
@@ -73,7 +83,13 @@
       padding: 1rem 2rem;
       text-decoration: none;
       border-radius: 5px;
-      font-weight: bold;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background-color: #2e4e3e;
     }
 
     form {
@@ -88,6 +104,14 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--verde-escuro);
+      outline: none;
+      box-shadow: 0 0 5px var(--verde-escuro);
     }
 
     button {
@@ -98,12 +122,27 @@
       border-radius: 5px;
       font-size: 1rem;
       cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+      background-color: #92c199;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer p:last-child {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
+      font-style: italic;
     }
 
     @media (max-width: 600px) {
@@ -118,6 +157,13 @@
       .contato {
         padding: 1.5rem;
       }
+      .cta {
+        padding: 1rem;
+      }
+      .cta a {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -129,7 +175,6 @@
 
   <section class="sobre">
     <div class="foto">
-      <!-- Substitua "veronica-foto.jpg" pela sua imagem -->
       <img src="veronica-foto.jpg" alt="Foto da Psicóloga Maria Verônica" />
     </div>
     <h2>Quem sou</h2>
@@ -190,6 +235,8 @@
 
   <footer>
     <p>&copy; 2025 Psicóloga Maria Verônica. Todos os direitos reservados.</p>
+    <p>Criado por Mateus Ferreira</p>
   </footer>
 </body>
 </html>
+
