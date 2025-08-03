@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Psicóloga Maria Verônica - Atendimento clínico online e presencial." />
+  <title>Psicóloga Maria Verônica</title>
+  <style>
+    :root {
+      --verde-claro: #A8D5BA;
+      --verde-escuro: #375F4B;
+      --branco: #ffffff;
+      --cinza: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--cinza);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--verde-claro);
+      color: var(--verde-escuro);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .sobre, .servicos, .contato {
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--branco);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .foto {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .foto img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .cta a {
+      background-color: var(--verde-escuro);
+      color: var(--branco);
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--verde-claro);
+      color: var(--verde-escuro);
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 1rem;
+      }
+      .sobre,
+      .servicos,
+      .contato {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Psicóloga Maria Verônica</h1>
+    <p>Atendimento online e presencial • Abordagem Centrada na Pessoa</p>
+  </header>
+
+  <section class="sobre">
+    <div class="foto">
+      <!-- Substitua "veronica-foto.jpg" pela sua imagem -->
+      <img src="veronica-foto.jpg" alt="Foto da Psicóloga Maria Verônica" />
+    </div>
+    <h2>Quem sou</h2>
+    <p>
+      Me chamo Maria Verônica, é um prazer te ter aqui. Sou psicóloga há 3 anos,
+      apaixonada por música, natureza e pelo cuidado com o outro.
+    </p>
+    <p>
+      Atuo com base na Abordagem Centrada na Pessoa (ACP), e sou pós-graduanda em
+      Psicologia Existencial Humanista e Fenomenológica, e também em Análise do
+      Comportamento Aplicada (ABA) ao Transtorno do Espectro Autista (TEA).
+    </p>
+  </section>
+
+  <section class="servicos">
+    <h2>Atuações</h2>
+    <ul>
+      <li>Psicologia clínica (online e presencial)</li>
+      <li>Psicóloga social</li>
+      <li>Psicologia infantil</li>
+      <li>Monitoria de supervisões em grupo</li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <p>
+      Entre em contato comigo pelo WhatsApp ou Instagram. Também pode me enviar
+      uma mensagem pelo formulário abaixo:
+    </p>
+    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea
+        name="mensagem"
+        rows="5"
+        placeholder="Escreva sua mensagem aqui..."
+        required
+      ></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+    <p style="margin-top: 1rem;">Ou clique abaixo para falar direto comigo:</p>
+    <p>
+      <a href="https://wa.me/559981406989" target="_blank"
+        >WhatsApp: (99) 8140-6989</a
+      >
+    </p>
+    <p>
+      <a href="https://www.instagram.com/mveraonica" target="_blank"
+        >Instagram: @mveraonica</a
+      >
+    </p>
+  </section>
+
+  <div class="cta">
+    <a href="https://wa.me/559981406989" target="_blank">Agende sua sessão</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Psicóloga Maria Verônica. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
