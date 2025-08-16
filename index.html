@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Psicóloga Maria Verônica - Atendimento clínico online e presencial." />
+  <meta property="og:title" content="Psicóloga Maria Verônica" />
+  <meta property="og:description" content="Atendimento clínico online e presencial" />
+  <meta property="og:image" content="veronica-foto.jpg" />
+  <meta property="og:type" content="website" />
   <title>Psicóloga Maria Verônica</title>
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     :root {
       --verde-claro: #A8D5BA;
       --verde-escuro: #375F4B;
@@ -33,6 +40,25 @@
       color: var(--verde-escuro);
       padding: 2rem;
       text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: var(--verde-escuro);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2e4e3e;
     }
 
     header h1 {
@@ -169,11 +195,18 @@
 </head>
 <body>
   <header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Quem sou</a></li>
+        <li><a href="#servicos">Atuações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
     <h1>Psicóloga Maria Verônica</h1>
     <p>Atendimento online e presencial • Abordagem Centrada na Pessoa</p>
   </header>
 
-  <section class="sobre">
+  <section class="sobre" id="sobre">
     <div class="foto">
       <img src="veronica-foto.jpg" alt="Foto da Psicóloga Maria Verônica" />
     </div>
@@ -189,7 +222,7 @@
     </p>
   </section>
 
-  <section class="servicos">
+  <section class="servicos" id="servicos">
     <h2>Atuações</h2>
     <ul>
       <li>Psicologia clínica (online e presencial)</li>
@@ -199,7 +232,7 @@
     </ul>
   </section>
 
-  <section class="contato">
+  <section class="contato" id="contato">
     <h2>Contato</h2>
     <p>
       Entre em contato comigo pelo WhatsApp ou Instagram. Também pode me enviar
@@ -218,19 +251,19 @@
     </form>
     <p style="margin-top: 1rem;">Ou clique abaixo para falar direto comigo:</p>
     <p>
-      <a href="https://wa.me/559981406989" target="_blank"
+      <a href="https://wa.me/559981406989" target="_blank" rel="noopener noreferrer"
         >WhatsApp: (99) 8140-6989</a
       >
     </p>
     <p>
-      <a href="https://www.instagram.com/mveraonica" target="_blank"
+      <a href="https://www.instagram.com/mveraonica" target="_blank" rel="noopener noreferrer"
         >Instagram: @mveraonica</a
       >
     </p>
   </section>
 
   <div class="cta">
-    <a href="https://wa.me/559981406989" target="_blank">Agende sua sessão</a>
+    <a href="https://wa.me/559981406989" target="_blank" rel="noopener noreferrer">Agende sua sessão</a>
   </div>
 
   <footer>
